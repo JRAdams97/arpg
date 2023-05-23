@@ -1,0 +1,28 @@
+[gd_scene load_steps=3 format=3 uid="uid://2ywjufsb3pnp"]
+
+[ext_resource type="Texture2D" uid="uid://difkdupq0wj0h" path="res://assets/player.png" id="1_r2835"]
+[ext_resource type="Texture2D" uid="uid://diuhv4eilt36b" path="res://assets/enemy.png" id="2_jdjft"]
+
+[node name="main" type="Node2D"]
+
+[node name="player" type="Sprite2D" parent="."]
+position = Vector2(480, 270)
+texture = ExtResource("1_r2835")
+
+[node name="enemies" type="Node2D" parent="."]
+
+[node name="enemy" type="Sprite2D" parent="enemies"]
+position = Vector2(294, 411)
+texture = ExtResource("2_jdjft")
+
+[node name="enemy2" type="Sprite2D" parent="enemies"]
+position = Vector2(776, 128)
+texture = ExtResource("2_jdjft")
+
+[node name="enemy4" type="Sprite2D" parent="enemies"]
+position = Vector2(693, 431)
+texture = ExtResource("2_jdjft")
+
+[node name="enemy3" type="Sprite2D" parent="enemies"]
+position = Vector2(123, 95)
+texture = ExtResource("2_jdjft")
