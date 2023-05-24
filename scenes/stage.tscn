@@ -1,0 +1,29 @@
+[gd_scene load_steps=3 format=3 uid="uid://e7k4cl0kb6yw"]
+
+[ext_resource type="Texture2D" uid="uid://diuhv4eilt36b" path="res://assets/enemy.png" id="2_jdjft"]
+[ext_resource type="PackedScene" uid="uid://c01std5ggpd62" path="res://scenes/player.tscn" id="3_ebsaf"]
+
+[node name="Stage" type="Node2D"]
+
+[node name="Enemies" type="Node2D" parent="."]
+
+[node name="Enemy" type="Sprite2D" parent="Enemies"]
+position = Vector2(294, 411)
+texture = ExtResource("2_jdjft")
+
+[node name="Enemy2" type="Sprite2D" parent="Enemies"]
+position = Vector2(776, 128)
+texture = ExtResource("2_jdjft")
+
+[node name="Enemy4" type="Sprite2D" parent="Enemies"]
+position = Vector2(800, 640)
+texture = ExtResource("2_jdjft")
+
+[node name="Enemy3" type="Sprite2D" parent="Enemies"]
+position = Vector2(123, 95)
+texture = ExtResource("2_jdjft")
+
+[node name="Player" parent="." instance=ExtResource("3_ebsaf")]
+
+[node name="Camera" type="Camera2D" parent="Player"]
+position = Vector2(480, 272)
